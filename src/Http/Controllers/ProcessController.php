@@ -4,6 +4,7 @@
 namespace Cblink\Process\Http\Controllers;
 
 
+use Cblink\Process\Http\Middleware\Authenticate;
 use Cblink\Process\Process;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
