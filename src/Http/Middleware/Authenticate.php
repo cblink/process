@@ -4,7 +4,7 @@
 namespace Cblink\Process\Http\Middleware;
 
 
-use Cblink\Queuer\Auth;
+use Cblink\Process\ProcessGuard;
 
 class Authenticate
 {
@@ -17,6 +17,6 @@ class Authenticate
      */
     public function handle($request, $next)
     {
-        return Auth::check($request) ? $next($request) : abort(403);
+        return ProcessGuard::check($request) ? $next($request) : abort(403);
     }
 }
