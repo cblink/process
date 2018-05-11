@@ -1,0 +1,25 @@
+{
+    "name": "cblink/process",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hanson",
+            "email": "h@hanc.cc"
+        }
+    ],
+    "require-dev": {
+        "laravel/framework": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cblink\\Process\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cblink\\Process\\ProcessServiceProvider"
+            ]
+        }
+    }
+}
